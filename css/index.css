@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  background-color: hsl(0, 6%, 88%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  background-color: hsl(0, 6%, 88%);
+  margin: 100px;
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 30px 30px;
+  border-radius: 5%;
+  border-bottom-right-radius: 30%;
+}
+@media (max-width: 767px) {
+  .container {
+    height: auto;
+  }
+}
+.container #base {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.container #base .form-group label {
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+  display: block;
+}
+.container #base .form-group input {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 100px;
+  border: solid 2px #C9C9C9;
+}
+.container #base .form-group input::placeholder {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .container #base .form-group input {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .container #base {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+.container .submit {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-top: solid 2px hsl(0, 0%, 86%);
+}
+.container .submit button {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 0.8rem 1rem;
+  border: none;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .container .submit {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+}
+.container .details div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-size: 4rem;
+  font-weight: bold !important;
+  font-style: italic;
+}
+.container .details div h6 {
+  color: hsl(259, 100%, 65%);
+}
+@media (max-width: 767px) {
+  .container .details div {
+    font-size: 3rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

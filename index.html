@@ -1,28 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./design/Relogio-Parede-24-Cm-Preto-Ticking.webp" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
   <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Age-data-clock</title>
 </head>
+
 <body>
   <div class="container">
     <div id="base">
       <div class="form-group">
+        <label for="day">Day</label>
         <input type="text" name="day" id="day" placeholder="DD">
-    </div>
-    <div class="form-group">
-      <input type="text" name="month" id="month" placeholder="MM">
-    </div> 
-    <div class="form-group">
-      <input type="text" name="year" id="year" placeholder="YYYY">
+      </div>
+      <div class="form-group">
+        <label for="month">Month</label>
+        <input type="text" name="month" id="month" placeholder="MM">
+      </div>
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year" placeholder="YYYY">
+      </div>
 
-    </div> 
+    </div>
+
+    <div class="submit">
+      <button type="button" id="button">
+        <img src="./assets/images/icon-arrow.svg" height="46" width="44" alt="">
+      </button>
+    </div>
+
+    <div class="details">
+
+      <div>
+        <h6 class="years">
+          --
+        </h6>
+        <span>years</span>
+      </div>
+      <div>
+        <h6 class="months">
+          -- </h6>
+        <span>months</span>
+      </div>
+      <div>
+        <h6 class="days">
+          --
+        </h6>
+        <span>days</span>
+      </div>
+      
+    </div>
   </div>
- </div>
-  
+
 </body>
+
 </html>
